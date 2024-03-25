@@ -5,15 +5,16 @@ This document provides comprehensive guidance on how to deploy, configure, and u
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Requirements and Setup](#requirements-and-setup)
+2. [How it works and functionality](#How-it-works-and-functionality)
+3. [Requirements and Setup](#requirements-and-setup)
    - [Bot Creation and Configuration](#bot-creation-and-configuration)
    - [Python and Dependencies](#python-and-dependencies)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Technical Details](#technical-details)
-6. [Contributing](#contributing)
-7. [License](#license)
-8. [Acknowledgements](#acknowledgements)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Technical Details](#technical-details)
+7. [Contributing](#contributing)
+8. [License](#license)
+9. [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
