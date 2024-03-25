@@ -59,6 +59,8 @@ def handle_updates():
                         if reply_to_message_id in forwarded_messages:
                             original_user_id = forwarded_messages[reply_to_message_id]
                             send_message(original_user_id, text)  # Send the reply to the original user
+                        else:
+                            send_message(GROUP_B_ID, "Unable to send reply: the original user is not tracked.")
 
         time.sleep(1)
 
