@@ -20,16 +20,10 @@ This document provides comprehensive guidance on how to deploy, configure, and u
 
 The Access Management Telegram Bot is designed to automate the processing of join requests and improve communication between the group members and its administrators. By using this bot, administrators can efficiently manage access to their Telegram group, ensuring a streamlined vetting process.
 
-When someone makes a request to join Group A, they immediately receive a message (currently: your request is under review).
-A new request notification is sent to the admins on Group B.
-The user who made the request can reply via the bot with a normal message, and the message will be forwarded to Group B/Admin.
-If an admin wants to reply, they must "quote" the message they are replying to and can respond directly through the group.
-The message that was replied to by "quoting" is automatically forwarded to the requesting user.
-Any message that is written to the group being created is automatically forwarded to the admin group.
-
 ## How it works and functionality
 
 - When someone makes a request to join Group A, they immediately receive a message (currently: your request is under review).
+- The message is correctly received even if the bot was never started by the requester. The bot **must** be admin of group A
 - A new request notification is sent to the admins on Group B.
 - The user who made the request can reply via the bot with a normal message, and the message will be forwarded to Group B/Admin.
 - If an admin wants to reply, they must "quote" the message they are replying to and can respond directly through the group.
@@ -40,8 +34,9 @@ Any message that is written to the group being created is automatically forwarde
 
 ### Bot Creation and Configuration
 1. **Create a Bot**: Use BotFather on Telegram to create a new bot. Note the generated `TOKEN`.
-2. **Enable Group Privacy**: Disable the Group Privacy setting from BotFather to allow the bot to read all messages in a group.
-3. **Obtain Group IDs**: Use the @chatIDrobot on Telegram to find the IDs of your main group (GROUP_A_ID) and your admin group (GROUP_B_ID). Remember, group IDs usually start with a "-".
+2. **Enable Group Privacy**: **Disable** the **Group Privacy** setting from BotFather to allow the bot to read all messages in a group.
+3. Add the bot to group A and group B and **make it admin**
+4. **Obtain Group IDs**: Use the @chatIDrobot on Telegram to find the IDs of your main group (GROUP_A_ID) and your admin group (GROUP_B_ID). Remember, group IDs usually start with a "-".
 
 ### Python and Dependencies
 - **Python**: Ensure Python 3.6 or newer is installed.
@@ -66,6 +61,8 @@ To start the bot, navigate to the bot's directory and execute:
 python bot_ammission_toshare_v1.py
 ```
 The bot will now listen for join requests and messages, handling them according to the configured logic.
+
+**To work correctly the bot must be added as admin of groups A and B and must be able to read ALL messages sent**
 
 ## Technical Details
 
