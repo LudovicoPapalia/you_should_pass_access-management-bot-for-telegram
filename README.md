@@ -28,7 +28,7 @@ The Access Management Telegram Bot is designed to automate the processing of joi
 - The user who made the request can reply via the bot with a normal message, and the message will be forwarded to Group B/Admin.
 - If an admin wants to reply, they must "quote" the message they are replying to and can respond directly through the group.
 - The message that was replied to by "quoting" is automatically forwarded to the requesting user.
-- Any message that is written to the group being created is automatically forwarded to the admin group.
+- Any message that is written to the bot being created (only private messages) is automatically forwarded to the admin group. Group A messages are obviously not forwarded.
 
 ## Requirements and Setup
 
