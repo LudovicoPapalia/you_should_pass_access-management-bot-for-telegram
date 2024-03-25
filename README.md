@@ -19,6 +19,22 @@ This document provides comprehensive guidance on how to deploy, configure, and u
 
 The Access Management Telegram Bot is designed to automate the processing of join requests and improve communication between the group members and its administrators. By using this bot, administrators can efficiently manage access to their Telegram group, ensuring a streamlined vetting process.
 
+When someone makes a request to join Group A, they immediately receive a message (currently: your request is under review).
+A new request notification is sent to the admins on Group B.
+The user who made the request can reply via the bot with a normal message, and the message will be forwarded to Group B/Admin.
+If an admin wants to reply, they must "quote" the message they are replying to and can respond directly through the group.
+The message that was replied to by "quoting" is automatically forwarded to the requesting user.
+Any message that is written to the group being created is automatically forwarded to the admin group.
+
+## How it works and functionality
+
+- When someone makes a request to join Group A, they immediately receive a message (currently: your request is under review).
+- A new request notification is sent to the admins on Group B.
+- The user who made the request can reply via the bot with a normal message, and the message will be forwarded to Group B/Admin.
+- If an admin wants to reply, they must "quote" the message they are replying to and can respond directly through the group.
+- The message that was replied to by "quoting" is automatically forwarded to the requesting user.
+- Any message that is written to the group being created is automatically forwarded to the admin group.
+
 ## Requirements and Setup
 
 ### Bot Creation and Configuration
@@ -35,9 +51,9 @@ The Access Management Telegram Bot is designed to automate the processing of joi
 
 ## Installation
 
-1. **Clone the Repository**: 
+1. **Clone the Repository (optional!)**: 
    ```
-   git clone https://github.com/yourusername/access-management-telegram-bot.git
+   git clone https://github.com/yourusername/you_should_pass_access-management-bot-for-telegram.git
    ```
 2. **Configuration**: Open the script and replace `TOKEN`, `GROUP_A_ID`, and `GROUP_B_ID` with the respective values obtained during the setup process.
 3. **Install Dependencies**: Install required Python libraries as mentioned in the [Requirements and Setup](#requirements-and-setup) section.
@@ -46,7 +62,7 @@ The Access Management Telegram Bot is designed to automate the processing of joi
 
 To start the bot, navigate to the bot's directory and execute:
 ```
-python bot.py
+python bot_ammission_toshare_v1.py
 ```
 The bot will now listen for join requests and messages, handling them according to the configured logic.
 
