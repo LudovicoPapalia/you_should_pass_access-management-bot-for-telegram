@@ -106,4 +106,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Acknowledgements
 
 - Special thanks to the creators of the Telegram Bot API.
-- Thanks to @chatIDrobot for simplifying the process of obtaining Telegram group IDs.
+- Thanks to @chatIDrobot for simplifying the process of obtaining Telegram group IDs. The creators of this code are in no way connected with the @chatIDrobot bot
