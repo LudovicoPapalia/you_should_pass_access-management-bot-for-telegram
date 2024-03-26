@@ -6,15 +6,16 @@ This document provides comprehensive guidance on how to deploy, configure, and u
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [How it works and functionality](#How-it-works-and-functionality)
-3. [Requirements and Setup](#requirements-and-setup)
+3. [Disclaimer and important notice](#Disclaimer-and-important-notice)
+4. [Requirements and Setup](#requirements-and-setup)
    - [Bot Creation and Configuration](#bot-creation-and-configuration)
    - [Python and Dependencies](#python-and-dependencies)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Technical Details](#technical-details)
-7. [Contributing](#contributing)
-8. [License](#license)
-9. [Acknowledgements](#acknowledgements)
+5. [Installation](#installation)
+6. [Usage](#usage)
+7. [Technical Details](#technical-details)
+8. [Contributing](#contributing)
+9. [License](#license)
+10. [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
@@ -29,6 +30,19 @@ The Access Management Telegram Bot is designed to automate the processing of joi
 - If an admin wants to reply, they must "quote" the message they are replying to and can respond directly through the group.
 - The message that was replied to by "quoting" is automatically forwarded to the requesting user.
 - Any message that is written to the bot being created (only private messages) is automatically forwarded to the admin group. Group A messages are obviously not forwarded.
+
+## Disclaimer and important notice
+
+1. **As-Is Basis**: The code provided in this repository is made available on an "as-is" basis. The author(s) of the code bear no responsibility for any consequences that may arise as a result of using this code. It is imperative that users verify and test the code thoroughly according to their own requirements and standards to ensure its suitability for their intended use.
+
+2. **No Affiliation with Bots or Groups**: The author(s) of this code **are not affiliated with any bots, groups, or entities where this code may be implemented or utilized**, even if a link to this repository is found within a bot or associated with a group. The presence of a repository link within a bot does not imply any connection or endorsement by the code’s author(s) to the bot, its operations, or the group it serves. The code is provided openly for anyone to use, and its application is solely at the discretion of those who choose to implement it. The author(s) disclaim any relationship with the operations, functionalities, or actions of such bots or groups derived from the use of this code. The developers do not endorse any group that may use this code directly or indirectly.
+
+3. **No Access to Chats**: The author(s) do not have, nor do they seek, access to any chats or private information that may be associated with the deployment of this code. The code is designed without any capability to grant access to its author(s) to any group chats or private communications. Access to such environments is strictly governed by the possession and management of an API key, which is the sole responsibility of the individual or entity choosing to deploy this code. The security and confidentiality of the API key, and by extension the privacy of the chats, rest entirely with the deployer.
+For the author of this code there is no possibility of accessing the chats as you will create your own bot and will be responsible for the keys. You are also fully responsible for additional security checks of the bot including - but not limited to - checking third-party libraries and the bot's hosting server.
+
+5. **Credit and Open Use**: Users who choose to reuse or modify this code are kindly **requested to give proper credit to the original author(s) by citing (link) the source repository in the bot description**. Furthermore, any reuse of this code **must** remain **open and non-profit in nature**, 
+adhering to the principles of open-source collaboration and sharing. This ensures the spirit of the original work is maintained and contributes positively to the community.
+
 
 ## Requirements and Setup
 
